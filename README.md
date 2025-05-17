@@ -104,6 +104,10 @@ bash run.sh <input.pdb> <gmx_command>
   检查 AmberTools、acpype 是否已安装；配体电荷 (`-nc`) 参数需与分子实际电荷一致。  
 - **拓扑冲突**  
   确保 `topol.top` 中 forcefield 路径正确，并且已包含 `Ligand_GMX.itp`。
+- **小分子命名错误**
+├── nvt.mdp                   # NVT 平衡参数
+├── npt.mdp                   # NPT 平衡参数
+当自己用的复合物结构不是预测得到的时候，小分子的命名不是默认的l01，因此这两个文件中小分子部分的命名需要修改为对应pdb文件中对于小分子的命名，否则一定会报错。
 
 ## 扩展
 
