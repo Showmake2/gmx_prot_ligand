@@ -111,5 +111,5 @@ bash run.sh <input.pdb> <gmx_command>
 
 ## 扩展
 
-- **MMPBSA 计算**：可在脚本末尾添加计算命令  
+- **MMPBSA 计算**：可以接下来直接使用我写的run_mmpbsa.sh脚本来进行结合能的计算。  
 - **参数调优**：`*.mdp` 文件中可根据需求修改时间步长、I/O 频率等
